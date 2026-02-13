@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeCrall</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-black text-white">
+
+  <!-- HEADER -->
+  <header class="flex justify-between items-center p-5 relative z-50">
+
+    <h1 class="font-semibold text-lg">CodeCrall</h1>
+
+    <!-- Links desktop -->
+    <div class="hidden md:flex items-center space-x-6">
+      <a href="#" class="hover:text-white">Acerca de</a>
+      <a href="#" class="bg-white text-black px-4 py-2 rounded-full font-semibold">Ingresa al curso</a>
+    </div>
+
+    <!-- Menú hamburguesa móvil -->
+    <div class="relative md:hidden">
+      <input type="checkbox" id="menu-toggle" class="peer hidden">
+
+      <!-- Icono hamburguesa -->
+      <label for="menu-toggle" class="cursor-pointer flex items-center justify-center w-10 h-10">
+        <i class='bx bx-menu text-3xl peer-checked:hidden'></i>
+      </label>
+
+      <!-- Icono X -->
+      <label for="menu-toggle" class="hidden peer-checked:flex absolute top-5 right-5 w-10 h-10 items-center justify-center z-50">
+        <i class='bx bx-x text-3xl'></i>
+      </label>
+
+      <!-- Menú fullscreen móvil -->
+      <div class="fixed inset-0 bg-black hidden peer-checked:flex flex-col items-center justify-center space-y-8 z-40">
+        <a href="#" class="text-xl">Acerca de</a>
+        <a href="inscripcion.html" class="bg-white text-black px-8 py-3 rounded-full font-semibold">Ingresa al curso</a>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- MAIN -->
+  <main class="px-3">
+
+    <!-- HERO -->
+    <section class="mt-6">
+      <div class="rounded-2xl overflow-hidden relative mx-auto max-w-md md:max-w-5xl">
+
+        <!-- Imagen escritorio -->
+        <img 
+          src="https://images.unsplash.com/photo-1492724441997-5dc865305da7"
+          class="w-full h-96 object-cover md:h-[500px]">
+
+        <!-- Overlay contenido -->
+        <div class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center px-6
+                    md:items-start md:justify-end md:text-left md:px-16 md:pb-16">
+
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">
+            Domina CSS desde cero
+          </h1>
+
+          <p class="text-base md:text-lg mb-6 text-white max-w-md">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Doloremque pariatur illum quos dicta adipisci molestias.
+          </p>
+
+          <a href="inscripcion.html" class="bg-white text-black px-8 py-3 rounded-full font-semibold">
+            Inscribirte ahora
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN APRENDIZAJE -->
+    <section class="mt-14">
+
+      <h2 class="text-3xl font-bold mb-3 text-white">
+        Lo que aprenderás
+      </h2>
+
+      <p class="text-sm mb-8 text-white max-w-md">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+
+      <div class="flex flex-col items-center space-y-6 mb-12 
+            md:flex-row md:flex-wrap md:justify-center md:gap-6 md:space-y-0">
+
+  <div class="bg-zinc-900 p-6 rounded-2xl w-full max-w-[280px] aspect-square flex flex-col justify-between">
+    <div>
+      <i class='bx bx-code-alt text-3xl mb-3 block'></i>
+      <h3 class="font-semibold mb-2 text-white text-2xl leading-tight">Fundamentos de CSS</h3>
+      <p class="text-gray-400 text-sm">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+    </div>
+  </div>
+
+  <div class="bg-zinc-900 p-6 rounded-2xl w-full max-w-[280px] aspect-square flex flex-col justify-between">
+    <div>
+      <i class='bx bx-mouse text-3xl mb-3 block'></i>
+      <h3 class="font-semibold mb-2 text-white text-2xl leading-tight">Técnicas avanzadas</h3>
+      <p class="text-gray-400 text-sm">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+    </div>
+  </div>
+
+  <div class="bg-zinc-900 p-6 rounded-2xl w-full max-w-[280px] aspect-square flex flex-col justify-between">
+    <div>
+      <i class='bx bx-file text-3xl mb-3 block'></i>
+      <h3 class="font-semibold mb-2 text-white text-2xl leading-tight">Aprendizaje Basado en Proyectos</h3>
+      <p class="text-gray-400 text-sm">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+    </div>
+  </div>
+
+  <div class="bg-zinc-900 p-6 rounded-2xl w-full max-w-[280px] aspect-square flex flex-col justify-between">
+    <div>
+      <i class='bx bx-palette text-3xl mb-3 block'></i>
+      <h3 class="font-semibold mb-2 text-white text-2xl leading-tight">Diseño Responsive</h3>
+      <p class="text-gray-400 text-sm">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+    </div>
+  </div>
+
+</div>
+
+    </section>
+
+    <!-- TESTIMONIALES -->
+<section class="mt-14 mb-12">
+  <h2 class="text-3xl font-bold mb-8 text-white text-center">Lo que dicen nuestros estudiantes</h2>
+
+  <div class="flex flex-col items-center space-y-6
+              md:flex-row md:justify-center md:gap-6 md:space-y-0">
+
+    <!-- Testimonio 1 -->
+    <div class="bg-zinc-900 p-6 rounded-2xl w-full max-w-sm flex flex-col items-center text-center">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Estudiante" class="w-16 h-16 rounded-full mb-4">
+      <h3 class="font-semibold text-white text-lg">Ana López</h3>
+      <p class="text-gray-400 text-sm mb-2">Desarrolladora Frontend</p>
+      <p class="text-gray-400 text-sm">
+        "Gracias a este curso entendí CSS desde cero y ahora puedo diseñar páginas completas."
+      </p>
+    </div>
+
+    <!-- Testimonio 2 -->
+    <div class="bg-zinc-900 p-6 rounded-2xl w-full max-w-sm flex flex-col items-center text-center">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Estudiante" class="w-16 h-16 rounded-full mb-4">
+      <h3 class="font-semibold text-white text-lg">Carlos Martínez</h3>
+      <p class="text-gray-400 text-sm mb-2">Diseñador UI/UX</p>
+      <p class="text-gray-400 text-sm">
+        "El contenido es claro y práctico. Me ayudó a mejorar mis proyectos personales y profesionales."
+      </p>
+    </div>
+
+    <!-- Testimonio 3 -->
+    <div class="bg-zinc-900 p-6 rounded-2xl w-full max-w-sm flex flex-col items-center text-center">
+      <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Estudiante" class="w-16 h-16 rounded-full mb-4">
+      <h3 class="font-semibold text-white text-lg">Lucía Fernández</h3>
+      <p class="text-gray-400 text-sm mb-2">Estudiante de Frontend</p>
+      <p class="text-gray-400 text-sm">
+        "Las tarjetas y ejercicios prácticos me hicieron entender conceptos difíciles de manera sencilla."
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-gray-400 px-6 py-8">
+
+    <!-- Primer bloque: enlaces con space-between -->
+    <div class="flex justify-between w-full max-w-4xl mx-auto">
+      <a href="#" class="hover:text-white">Contáctanos</a>
+      <a href="#" class="hover:text-white">Términos y condiciones</a>
+      <a href="#" class="hover:text-white">Política de privacidad</a>
+    </div>
+
+    <!-- Segundo bloque: derechos de autor -->
+    <div class="text-center text-sm mt-4">
+      © 2026 Proyecto Landing. Todos los derechos reservados.
+    </div>
+
+  </footer>
+
+</body>
+</html>
